@@ -2,11 +2,31 @@
   animation: showCase 0.5s;
 }
 
+.sub-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  animation: showOpacity 0.5s 0.5s forwards ease-in-out 1;
+  opacity: 0;
+}
+
 @keyframes showCase {
   0% {
     transform: scale(0.1);
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes showOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
